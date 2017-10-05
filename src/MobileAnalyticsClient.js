@@ -2,7 +2,7 @@ import AWS from 'aws-sdk/dist/aws-sdk-react-native';
 import Storage from './Storage';
 import StorageKeys from './StorageKeys.js';
 import Util from'./MobileAnalyticsUtilities';
-const DeviceInfo = require('react-native-device-info');
+import { Constants } from 'expo';
 
 /**
  * @typedef AMA.Client.Options
@@ -132,7 +132,7 @@ export default class MobileAnalyticsClient {
                 this.storage.get(StorageKeys.GLOBAL_METRICS) || {})
         );
 
-        this.storage.set(StorageKeys.CLIENT_ID, DeviceInfo.getUniqueID());
+        this.storage.set(StorageKeys.CLIENT_ID, Constants.deviceId);
 
         this.StorageKeys = {
             'EVENTS'     : 'AWSMobileAnalyticsEventStorage',
@@ -185,7 +185,7 @@ export default class MobileAnalyticsClient {
 
         this.options.clientContext = this.options.clientContext || {
                 'client'  : {
-                    'client_id'       : DeviceInfo.getUniqueID(),
+                    'client_id'       : Constants.deviceId,
                     'app_title'       : this.options.appTitle,
                     'app_version_name': this.options.appVersionName,
                     'app_version_code': this.options.appVersionCode,

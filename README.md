@@ -1,8 +1,8 @@
-# react-native-aws-mobile-analytics
+# expo-aws-mobile-analytics
 
-[![Build Status](https://travis-ci.org/innFactory/react-native-aws-mobile-analytics.svg?branch=master)](https://www.npmjs.com/package/react-native-aws-mobile-analytics)
-[![Version](https://img.shields.io/npm/v/react-native-aws-mobile-analytics.svg)](https://www.npmjs.com/package/react-native-aws-mobile-analytics)
-[![Downloads](https://img.shields.io/npm/dt/react-native-aws-mobile-analytics.svg)](https://www.npmjs.com/package/react-native-aws-mobile-analytics)
+[![Build Status](https://travis-ci.org/innFactory/expo-aws-mobile-analytics.svg?branch=master)](https://www.npmjs.com/package/expo-aws-mobile-analytics)
+[![Version](https://img.shields.io/npm/v/expo-aws-mobile-analytics.svg)](https://www.npmjs.com/package/expo-aws-mobile-analytics)
+[![Downloads](https://img.shields.io/npm/dt/expo-aws-mobile-analytics.svg)](https://www.npmjs.com/package/expo-aws-mobile-analytics)
 
 A react-native module for using Amazon's AWS Mobile Analytics with the aws-sdk
 
@@ -11,9 +11,9 @@ Highly inspirated by the javascript version [aws-sdk-mobile-analytics-js](https:
 <br/>
 
 ## Usage
-Add react-native-aws-mobile-analytics
+Add expo-aws-mobile-analytics
 ```
-npm install --save react-native-aws-mobile-analytics
+npm install --save expo-aws-mobile-analytics
 ```
 
 Add Permission for Network State to your `AndroidManifest.xml`
@@ -27,7 +27,7 @@ Add aws-sdk
 npm install --save aws-sdk
 ```
 
-react-native-aws-mobile-analytics needs the [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info) package as dependency for an unique client id. Make sure it is correct linked. You may have to call react-native link:
+expo-aws-mobile-analytics needs the [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info) package as dependency for an unique client id. Make sure it is correct linked. You may have to call react-native link:
 ```
 react-native link
 ```
@@ -37,7 +37,7 @@ react-native link
 Create file `MobileAnalytics.js` where you can do the configuration:
 ```javascript
 import AWS from "aws-sdk/dist/aws-sdk-react-native";
-import AMA from "react-native-aws-mobile-analytics";
+import AMA from "expo-aws-mobile-analytics";
 import {
     Platform,
 } from 'react-native';
@@ -110,7 +110,7 @@ export default class SomeComponent extends Component {
 <br/>
 
 #### Checkout the full example:
-[react-native-aws-mobile-analytics-demo](https://github.com/innFactory/react-native-aws-mobile-analytics-demo)
+[expo-aws-mobile-analytics-demo](https://github.com/innFactory/expo-aws-mobile-analytics-demo)
 
 <br/>
 
