@@ -1,12 +1,9 @@
 # expo-aws-mobile-analytics
 
-[![Build Status](https://travis-ci.org/innFactory/expo-aws-mobile-analytics.svg?branch=master)](https://www.npmjs.com/package/expo-aws-mobile-analytics)
-[![Version](https://img.shields.io/npm/v/expo-aws-mobile-analytics.svg)](https://www.npmjs.com/package/expo-aws-mobile-analytics)
-[![Downloads](https://img.shields.io/npm/dt/expo-aws-mobile-analytics.svg)](https://www.npmjs.com/package/expo-aws-mobile-analytics)
-
 A react-native module for using Amazon's AWS Mobile Analytics with the aws-sdk
 
-Highly inspirated by the javascript version [aws-sdk-mobile-analytics-js](https://github.com/aws/aws-sdk-mobile-analytics-js)
+Gratefully forked from spoeck's repo
+[react-native-aws-mobile-analytics](https://github.com/innFactory/react-native-aws-mobile-analytics)
 
 <br/>
 
@@ -16,20 +13,11 @@ Add expo-aws-mobile-analytics
 npm install --save expo-aws-mobile-analytics
 ```
 
-Add Permission for Network State to your `AndroidManifest.xml`
-```
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-```
 
 
 Add aws-sdk
 ```
 npm install --save aws-sdk
-```
-
-expo-aws-mobile-analytics needs the [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info) package as dependency for an unique client id. Make sure it is correct linked. You may have to call react-native link:
-```
-react-native link
 ```
 
 <br/>
@@ -109,13 +97,8 @@ export default class SomeComponent extends Component {
 
 <br/>
 
-#### Checkout the full example:
-[expo-aws-mobile-analytics-demo](https://github.com/innFactory/expo-aws-mobile-analytics-demo)
-
-<br/>
 
 ## Contributors
 
+[Michael Jeries](https://github.com/mjeries)
 [Anton Spöck](https://github.com/spoeck)
-
-Powered by [innFactory](https://innfactory.de/)
