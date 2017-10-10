@@ -1,11 +1,11 @@
 {
   "name": "expo-aws-mobile-analytics",
   "version": "0.1.2",
-  "description": "A expo compatible module for using Amazon's AWS Mobile Analytics with the aws-sdk",
+  "description": "An Expo-compatible module for using Amazon's AWS Mobile Analytics with the aws-sdk",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/innFactory/expo-aws-mobile-analytics"
+    "url": "https://github.com/mjeries/expo-aws-mobile-analytics"
   },
   "dependencies": {
     "aws-sdk": "^2.71.0"
